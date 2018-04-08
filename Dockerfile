@@ -10,7 +10,7 @@ ARG USER_NAME=pyenv-test
 
 # Settings about pyenv management
 ENV PYENV_ROOT /home/${USER_NAME}/.pyenv
-ENV PATH ${PYENV_ROOT}/bin:$PATH
+ENV PATH ${PYENV_ROOT}/bin:/home/${USER_NAME}/.local/bin:$PATH
 
 # Create user for pyenv
 RUN useradd -m -s /bin/bash -u "${USER_UID}" "${USER_NAME}"
