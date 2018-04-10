@@ -61,6 +61,7 @@ def test_python_packages(host, name, version):
 
 
 @pytest.mark.parametrize('version', [
+    ('2.7.14'),
     ('3.4.7'),
     ('3.5.4'),
     ('3.6.3'),

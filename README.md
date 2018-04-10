@@ -8,6 +8,7 @@ versions, managed by Pyenv
 ## Managed Python version
 
 These Python versions are managed by this image using pyenv:
+* 2.7.14
 * 3.4.7
 * 3.5.4
 * 3.6.3
