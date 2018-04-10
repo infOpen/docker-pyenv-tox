@@ -8,4 +8,4 @@ services:
 language: 'python'
 
 script:
-  - 'py.test -vvv'
+  - 'travis_wait 20 py.test -vvv'
