@@ -16,7 +16,11 @@ ENV PATH ${PYENV_ROOT}/bin:/home/${USER_NAME}/.local/bin:$PATH
 RUN useradd -m -s /bin/bash -u "${USER_UID}" "${USER_NAME}"
 
 # Manage testing folder
-RUN mkdir -p /srv/app && chown "${USER_NAME}" /srv/app
+RUN mkdir -p /srv \
+    && mkdir /srv/app \
+    && mkdir /srv/build \
+    && mkdir /srv/src \
+    && chown -R "${USER_NAME}":"${USER_NAME}" /srv
 WORKDIR /srv/app
 
 # Install openssh, lsb-release and python basics
