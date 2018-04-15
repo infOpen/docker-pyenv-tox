@@ -1,0 +1,11 @@
+---
+
+sudo: 'required'
+
+services:
+  - 'docker'
+
+language: 'python'
+
+script:
+  - 'travis_wait 20 py.test -vvv'
