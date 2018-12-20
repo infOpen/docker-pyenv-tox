@@ -17,16 +17,17 @@ def test_app_user(host):
     assert app_user.shell == '/bin/bash'
     assert 'pyenv-test' in app_user.groups
 
+
 @pytest.mark.parametrize('name,version', [
     ('curl', '7.47.0-1ubuntu2.7'),
-    ('git', '1:2.7.4-0ubuntu1.3'),
+    ('git', '1:2.7.4-0ubuntu1.6'),
     ('libbz2-dev', '1.0.6-8'),
     ('libffi-dev', '3.2.1-4'),
-    ('libpython3.5-dev', '3.5.2-2ubuntu0~16.04.4'),
+    ('libpython3.5-dev', '3.5.2-2ubuntu0~16.04.5'),
     ('libreadline-dev', '6.3-8ubuntu2'),
     ('libsqlite3-dev', '3.11.0-1ubuntu1'),
-    ('libssl-dev', '1.0.2g-1ubuntu4.11'),
-    ('libxml2-dev', '2.9.3+dfsg1-1ubuntu0.5'),
+    ('libssl-dev', '1.0.2g-1ubuntu4.14'),
+    ('libxml2-dev', '2.9.3+dfsg1-1ubuntu0.6'),
     ('libxslt1-dev', '1.1.28-2.1ubuntu0.1'),
     ('locales', '2.23-0ubuntu10'),
     ('lsb-release', '9.20160110ubuntu0.2'),
