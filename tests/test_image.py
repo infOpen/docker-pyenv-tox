@@ -62,10 +62,11 @@ def test_python_packages(host, name, version):
 
 
 @pytest.mark.parametrize('version', [
-    ('2.7.14'),
-    ('3.4.7'),
-    ('3.5.4'),
-    ('3.6.3'),
+    ('2.7.15'),
+    ('3.4.9'),
+    ('3.5.6'),
+    ('3.6.7'),
+    ('3.7.1'),
 ])
 def test_pyenv_versions(host, version):
     """
