@@ -54,10 +54,11 @@ RUN pip3 install tox==3.0.0 tox-pyenv==1.1.0
 USER ${USER_NAME}
     RUN git clone --depth 1 --branch v1.2.8 https://github.com/pyenv/pyenv.git ~/.pyenv && \
     echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.bashrc && \
-    pyenv install 2.7.14 && \
-    pyenv install 3.4.7 && \
-    pyenv install 3.5.4 && \
-    pyenv install 3.6.3
+    pyenv install 2.7.15 && \
+    pyenv install 3.4.9 && \
+    pyenv install 3.5.6 && \
+    pyenv install 3.6.7 && \
+    pyenv install 3.7.1
 
 # Default command management
 USER root
